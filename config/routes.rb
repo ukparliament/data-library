@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   get "up" => "rails/health#show", as: :rails_health_check
 
+  get "meta/cookies" => "meta#cookies", as: :meta_cookies
+
   root "home#index"
   get "about", to: "home#about"
   get "help", to: "home#help"
