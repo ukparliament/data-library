@@ -2,16 +2,16 @@
 
 Parliamentary Search provides access to parliamentary material from multiple sources, including debates, written questions and answers, and other parliamentary business.
 
-## Search Tools
+## Current versions
 
-- [Search Materials](https://search-material.parliament.uk/) - for all users
-- [Parliamentary Search](https://search.parliament.uk/) - for internal users only
+- [Search Material](https://search-material.parliament.uk/) - for all users
+- [Parliamentary Search](https://search.parliament.uk/) - provides more functionality for internal users only.
 
-A beta preview of the unified search experience is available at [beta-search.parliament.uk](https://beta-search.parliament.uk/).
+## In development
 
-## Development
+A beta preview of a new public search application is available at [beta-search.parliament.uk](https://beta-search.parliament.uk/).
 
-Application development is tracked on a [Trello Board](https://trello.com/b/parliamentary-search).
+Application development is tracked on [Trello](https://trello.com/b/hP5FLFHA/search-application-development).
 
 ## Contact
 

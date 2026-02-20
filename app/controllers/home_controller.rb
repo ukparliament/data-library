@@ -10,8 +10,6 @@ class HomeController < ApplicationController
   def help;           end  # User help/documentation
   def search;         end  # Search page (placeholder)
   def data_services;  end  # API/data services info
-  def thesaurus;      end  # Parliamentary thesaurus info
   def data_catalogue; end  # Data catalogue info
-  def tools;          end  # Tools/utilities info
-  def roadmap;        end  # Development roadmap
+  def apps;           end  # Applications info
 end
