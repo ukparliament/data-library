@@ -18,14 +18,10 @@ module BreadcrumbsHelper
       crumbs << { label: "Search", url: nil }
     when "data_services"
       crumbs << { label: "Data Services", url: nil }
-    when "thesaurus"
-      crumbs << { label: "Thesaurus", url: nil }
     when "data_catalogue"
       crumbs << { label: "Data Catalogue", url: nil }
-    when "tools"
-      crumbs << { label: "Tools", url: nil }
-    when "roadmap"
-      crumbs << { label: "Roadmap", url: nil }
+    when "apps"
+      crumbs << { label: "Applications", url: nil }
     end
 
     crumbs
