@@ -4,5 +4,5 @@ class ApplicationController < ActionController::Base
 
   include LibraryDesign::Crumbs
 
-  $SITE_TITLE = 'Data Library'
+  $SITE_TITLE = "Data Library"
 end

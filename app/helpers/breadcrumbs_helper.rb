@@ -5,7 +5,7 @@
 #
 module BreadcrumbsHelper
   def breadcrumbs
-    crumbs = [{ label: "Data Library", url: root_path }]
+    crumbs = [ { label: "Data Library", url: root_path } ]
 
     case action_name
     when "index"
