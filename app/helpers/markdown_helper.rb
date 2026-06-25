@@ -1,7 +1,7 @@
 module MarkdownHelper
   def render_markdown(filename)
-    file_path = Rails.root.join('content', "#{filename}.md")
-    return content_tag(:p, "Content not found: #{filename}", class: 'error') unless File.exist?(file_path)
+    file_path = Rails.root.join("content", "#{filename}.md")
+    return content_tag(:p, "Content not found: #{filename}", class: "error") unless File.exist?(file_path)
 
     content = File.read(file_path)
     markdown = Redcarpet::Markdown.new(
