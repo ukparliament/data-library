@@ -1,3 +1,60 @@
 <div class="data-catalogue-page">
   <%= render_markdown('data-catalogue') %>
+
+  <div id="index">
+    <div class="card">
+      <a href="<%= members_and_elections_path %>" class="card">
+        <div class="card-inner">
+          <div class="content">
+            <div class="primary-info">Members and Elections</div>
+            <div class="tertiary-info">Data about members of both Houses and parliamentary elections</div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="<%= parliamentary_business_path %>" class="card">
+        <div class="card-inner">
+          <div class="content">
+            <div class="primary-info">Parliamentary Business</div>
+            <div class="tertiary-info">Bills, questions, debates and the work of both Houses</div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="<%= committees_path %>" class="card">
+        <div class="card-inner">
+          <div class="content">
+            <div class="primary-info">Committees</div>
+            <div class="tertiary-info">Committee membership, inquiries, evidence and publications</div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="<%= papers_and_procedure_path %>" class="card">
+        <div class="card-inner">
+          <div class="content">
+            <div class="primary-info">Papers and Procedure</div>
+            <div class="tertiary-info">Papers laid before Parliament and procedural records</div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="<%= legislation_path %>" class="card">
+        <div class="card-inner">
+          <div class="content">
+            <div class="primary-info">Legislation</div>
+            <div class="tertiary-info">Bills, Acts and statutory instruments before Parliament</div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
 </div>

@@ -1,0 +1,9 @@
+<%#
+  Shared template for the simple markdown pages, used by both HomeController
+  and MetaController. The action name gives the content file, e.g. the
+  `data_services` action renders content/data-services.md; `about` renders
+  content/about.md. Pages needing bespoke markup keep their own template.
+%>
+<div class="page-content">
+  <%= render_markdown(action_name.dasherize) %>
+</div>
