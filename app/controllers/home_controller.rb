@@ -6,7 +6,23 @@
 # their own. No data fetching required - views contain static content.
 #
 class HomeController < ApplicationController
-  def index; end  # Landing page — home crumb only, bespoke template
+
+  def index
+    @page_title = 'UK Parliament Data Library'
+    @description = 'A data library from the UK Parliament.'
+    @crumb << { label: "Data Library", url: nil }
+  end
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 
   def search
     @crumb << { label: "Search", url: nil }
