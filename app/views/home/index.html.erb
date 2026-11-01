@@ -1,74 +1,67 @@
-<div>
-  <h1>UK Parliament Data Library</h1>
-  <p class="lead">Bringing together Parliament's procedural data.</p>
+<%= content_tag( 'p', "Bringing together Parliament's procedural data." ) %>
 
-  <div class="block block-page">
     <div class="row">
-      <div class="col-sm-6">
-        <h2>About</h2>
-        <p>The Data Library provides access to data on Parliament's work, as well as advice and support on how to use it. This includes data from Parliament's linked data platform and links out to other sources.</p>
-        <h2>Getting Started</h2>
-        <p>Use the <strong>Search</strong> application to find specific parliamentary materials.</p>
-        <p>Developers can access data programmatically through our <strong>Data Services</strong> APIs and SPARQL endpoints.</p>
-      </div>
-      <div class="col-sm-6">
-        <div id="index">
-          <div class="card">
-            <a href="<%= search_path %>" class="card">
-              <div class="card-inner">
-                <div class="content">
-                  <div class="primary-info">Search</div>
-                  <div class="tertiary-info">Search across all parliamentary data resources</div>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="card">
-            <a href="<%= data_services_path %>" class="card">
-              <div class="card-inner">
-                <div class="content">
-                  <div class="primary-info">Data Services</div>
-                  <div class="tertiary-info">APIs and data feeds for parliamentary information</div>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="card">
-            <a href="<%= data_catalogue_path %>" class="card">
-              <div class="card-inner">
-                <div class="content">
-                  <div class="primary-info">Data Catalogue</div>
-                  <div class="tertiary-info">Explore available datasets and their metadata</div>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="card">
-            <a href="<%= vocabulary_path %>" class="card">
-              <div class="card-inner">
-                <div class="content">
-                  <div class="primary-info">Vocabulary</div>
-                  <div class="tertiary-info">Subject terms used to index parliamentary material</div>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="card">
-            <a href="<%= apps_path %>" class="card">
-              <div class="card-inner">
-                <div class="content">
-                  <div class="primary-info">Applications</div>
-                  <div class="tertiary-info">Applications to support use of parliament's information</div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+		<div class="col-sm-6">
+			<%= content_tag( 'h2', 'About' ) %>
+			<%= content_tag( 'p', "The Data Library provides access to data on Parliament's work, as well as advice and support on how to use it. This includes data from Parliament's linked data platform and links out to other sources." ) %>
+			
+			<%= content_tag( 'h2', 'Getting Started' ) %>
+			<%= content_tag( 'p', "Use the #{content_tag( 'strong', 'Search' )} application to find specific parliamentary materials.".html_safe ) %>
+			<%= content_tag( 'p', "Developers can access data programmatically through our #{content_tag( 'strong', 'Data Services' )} APIs and SPARQL endpoints.".html_safe ) %>
+		</div>
+		<div class="col-sm-6">
+			<ol class="card-list unnumbered">
+				<a href="<%= search_path %>" class="card">
+					<li>
+						<div class="card-inner">
+							<div class="content">
+								<div class="primary-info">Search</div>
+								<div class="tertiary-info">Search across all parliamentary data resources</div>
+							</div>
+						</div>
+					</li>
+				</a>
+				<a href="<%= data_services_path %>" class="card">
+					<li>
+						<div class="card-inner">
+							<div class="content">
+								<div class="primary-info">Data Services</div>
+								<div class="tertiary-info">APIs and data feeds for parliamentary information</div>
+							</div>
+						</div>
+					</li>
+				</a>
+				<a href="<%= data_catalogue_path %>" class="card">
+					<li>
+						<div class="card-inner">
+							<div class="content">
+								<div class="primary-info">Data Catalogue</div>
+								<div class="tertiary-info">Explore available datasets and their metadata</div>
+							</div>
+						</div>
+					</li>
+				</a>
+				<a href="<%= vocabulary_path %>" class="card">
+					<li>
+						<div class="card-inner">
+							<div class="content">
+								<div class="primary-info">Vocabulary</div>
+								<div class="tertiary-info">Subject terms used to index parliamentary material</div>
+							</div>
+						</div>
+					</li>
+				</a>
+				<a href="<%= apps_path %>" class="card">
+					<li>
+						<div class="card-inner">
+							<div class="content">
+								<div class="primary-info">Applications</div>
+								<div class="tertiary-info">Applications to support use of parliament's information</div>
+							</div>
+						</div>
+					</li>
+				</a>
+			</ol>
+		</div>
+	</div
 </div>
